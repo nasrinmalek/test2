@@ -1,0 +1,114 @@
+<html>
+    <head><title>form</title>
+    <style>
+       div{
+        height: 800px;
+        width: 600px;
+        border: 5px solid black;
+        border-radius: 10px;
+        background-color:plum;
+       }
+       h2{
+        font-size: 30px;
+        font-weight: bold;
+        color: red;
+       }
+       table{
+        border-spacing: 10px;
+       }
+       td{
+        
+        font-size: 30px;
+       }
+       input[type="submit"]{
+        border:2px solid black;
+        height: 30px;
+        width: 100px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(200, 32, 200);
+        cursor: pointer;
+        border-radius: 5px;
+       }
+       textarea{
+        height: 100px;
+        width: 500px;
+        border: 2px solid black;
+        border-radius: 5px;
+       }
+       input[type="text"],
+       input[type="password"],
+       input[type="email"],
+       input[type="number"],
+       select
+       {
+        width: 250px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 5px;
+       }
+    </style>
+    </head>
+    <center>
+        <body>
+            <div>
+                <form>
+                    <h2>Personal Details</h2>
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password"></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail id:</td>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Contact#:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td><input type="radio" name="r1">Male
+                                <input type="radio" name="r1">Female
+                            </td>
+                        </tr>
+                    </table>
+                    <h2>Educational Qualification</h2>
+                    <table>
+                        <tr>
+                            <td>Degree:</td>
+                            <td><select style="font-size: 25px;font-weight: bold;">
+                                <option>--Select Degree--</option>
+                                <option>B.Sc. IT</option>
+                                <option>B.Sc. IS</option>
+                                <option>B.Sc. CS</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                    <h2>Address</h2>
+                    <table>
+                        <tr>
+                            <td><textarea></textarea></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>Attach Resume:</td>
+                            <td><input type="file" style="font-weight: bold;"></td>
+                        </tr>
+                        </table>
+                        <table>
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </body>
+    </center>
+</html>
